@@ -14,3 +14,15 @@ a {
 * {
   box-sizing: border-box;
 }
+
+ul {
+  all: unset;
+}
+
+li {
+  list-style: none;
+}
+
+h2 {
+  color: #58a6ff;
+}
