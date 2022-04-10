@@ -2,17 +2,28 @@
     margin-top: 40px;
     width: 1024px;
     box-sizing: border-box;
-    /* background-color: ghostwhite; */
-    min-height: 200px;
+    min-height: 300px;
     border: 2px solid #eeeeee;
     border-radius: 4px;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
 }
 
+.container h2 {
+    position: relative;
+    left: -170px;
+    top: 5px;
+
+    font-family: 'Oswald';
+    font-size: 30px;
+
+    color: black;
+}
+
 .countdown_timer {
+    position: relative;
+    top: -10px;
     width: 600px;
     height: 100px;
     border: 2px solid black;
@@ -28,25 +39,8 @@
 }
 
 .gradient {
-    /* background-image: linear-gradient(to right,#ffdbdb, #f4d6df, #e9d1e3, #434343, #000000);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    background-size: 300%;
-    background-position: -200%;
-    animation: animatedText 2s infinite;
-
-    @keyframes animatedText {
-        from {
-            background-position: 0%;
-        }
-        to {
-            background-position: 100%;
-        }
-    } */
-
     text-transform: uppercase; 
-    background-image: linear-gradient(to right, white, black,#58a6ff);
+    background-image: linear-gradient(to right, white, black);
     -webkit-background-clip: text; 
     background-clip: text; 
     color: transparent;
@@ -76,3 +70,14 @@
 .two_numbers {
     width: 2ch;
 }
+
+.unselectable {
+    cursor: default;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently */
+}
+    

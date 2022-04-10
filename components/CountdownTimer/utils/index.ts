@@ -2,7 +2,6 @@ import dayjs from 'dayjs';
 
 export function getRemainingTimeUntilMsTimestamp(timestampDayjs:dayjs.Dayjs) {
     const nowDayjs = dayjs();
-    console.log(timestampDayjs)
     if(timestampDayjs.isBefore(nowDayjs)) {
         console.log(nowDayjs)
         return {
@@ -21,7 +20,6 @@ export function getRemainingTimeUntilMsTimestamp(timestampDayjs:dayjs.Dayjs) {
 }
 
 function getRemainingSeconds(nowDayjs: dayjs.Dayjs, timestampDayjs: dayjs.Dayjs) {
-    console.log(123)
     const seconds = timestampDayjs.diff(nowDayjs, 'seconds') % 60;
     return padWithZeros(seconds, 2);
 }
