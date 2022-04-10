@@ -2,7 +2,7 @@ import style from "./todo.module.css";
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 
-interface todo {
+interface Task {
   id: string;
   text: string;
 }
@@ -30,7 +30,7 @@ export default function Todo() {
     formElements.taskInput.value = "";
   };
 
-  const handleDelete = (todo: todo) => {
+  const handleDelete = (todo: Task) => {
     const updatedArray = todoList.filter((todoItem) => todoItem.id != todo.id);
     setTodoList(updatedArray);
   };
