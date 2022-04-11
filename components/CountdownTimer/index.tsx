@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { getRemainingTimeUntilMsTimestamp } from "./utils";
 import { Dayjs } from "dayjs";
 import HolidayLights from "./HolidayLights";
+import Bubles from "./HolidayLights/Bubles";
 
 const defaultRemainingTime = {
   seconds: "00",
@@ -31,19 +32,25 @@ const CountdownTimer = ({ countdownTimestampMs }: props) => {
 
   return (
     <div className={style.container}>
-        <HolidayLights lightsNum={24}/>
-        <h2>Until Happy New Year</h2>
-            <div className={style.countdown_timer + ' ' + style.unselectable}>
-              <span className={style.gradient}>{remainingTime.days}</span>
-              <span className={style.gradient}>days</span>
-              <span className={style.two_numbers + ' ' + style.gradient}>{remainingTime.hours}</span>
-              <span  className={style.gradient}>hours</span>
-              <span className={style.two_numbers + ' ' + style.gradient}>{remainingTime.minutes}</span>
-              <span className={style.gradient} >minutes</span>
-              <span className={style.two_numbers + ' ' + style.gradient}>{remainingTime.seconds}</span>
-              <span className={style.gradient}>seconds</span>
-        </div>
-        
+      <Bubles bubleNum={1000} />
+      <HolidayLights lightsNum={24} />
+      <h2>Until Happy New Year</h2>
+      <div className={style.countdown_timer + " " + style.unselectable}>
+        <span className={style.gradient}>{remainingTime.days}</span>
+        <span className={style.gradient}>days</span>
+        <span className={style.two_numbers + " " + style.gradient}>
+          {remainingTime.hours}
+        </span>
+        <span className={style.gradient}>hours</span>
+        <span className={style.two_numbers + " " + style.gradient}>
+          {remainingTime.minutes}
+        </span>
+        <span className={style.gradient}>minutes</span>
+        <span className={style.two_numbers + " " + style.gradient}>
+          {remainingTime.seconds}
+        </span>
+        <span className={style.gradient}>seconds</span>
+      </div>
     </div>
   );
 };
