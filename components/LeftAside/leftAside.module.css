@@ -11,12 +11,16 @@
 }
 
 .container_aside li {
+    display: flex;
     width: 276px;
     height: 40px;
-    display: flex;
+    text-justify: center;
     padding: 0 16px;
-    justify-content: start;
     align-items: center;
+}
+
+.container_aside li a {
+    width: 100%;
 }
 
 .active {

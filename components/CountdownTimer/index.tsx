@@ -32,7 +32,7 @@ const CountdownTimer = ({ countdownTimestampMs }: props) => {
 
   return (
     <div className={style.container}>
-      <Bubles bubleNum={1000} />
+      <Bubles bubleNum={200} />
       <HolidayLights lightsNum={16} />
       <h2>Until Happy New Year</h2>
       <div className={style.countdown_timer + " " + style.unselectable}>
