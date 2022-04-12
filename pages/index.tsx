@@ -1,14 +1,26 @@
 import type { NextPage } from "next";
-import CountdownTimer from "../components/CountdownTimer";
-import Todo from "../components/Todo";
 import styles from "../styles/home.module.css";
-import dayjs from "dayjs";
+import Main from "../components/Main";
+import LeftAside from "../components/LeftAside";
+import RightAside from "../components/RightAside";
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.main_container}>
-      <Todo />
-      <CountdownTimer countdownTimestampMs={dayjs().year(2023).month(0).date(0).hour(0).minute(0).second(0)} />
+    <div className={styles.container}>
+      <aside className={styles.sidebar_primary}>
+          <LeftAside />
+      </aside>
+      <div className={styles.second_container}>
+        <div className={styles.main_container}>
+          <Main />
+          <Main />
+          <Main />
+        </div>
+
+        <div className={styles.sidebar_secondary}>
+          <RightAside />
+        </div>
+      </div>
     </div>
   );
 };

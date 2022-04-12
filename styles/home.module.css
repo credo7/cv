@@ -1,6 +1,32 @@
-.main_container {
+.second_container {
     width: 100vw;
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    flex-direction: row;
+    overflow: scroll;
 }
+
+.container {
+    display: flex;
+    flex-direction: row;
+    max-height: 100vh;
+    overflow: hidden;
+  }
+  
+  .sidebar_primary {
+    height: 100vh;
+    width: max(300px, -455px + 50vw);
+    background-color: rgb(245, 247, 249);
+    border-right: 1px solid rgb(211, 220, 228);
+  }
+  
+  .sidebar_secondary {
+    width: max(220px, -910px + 100vw - max(300px, -455px + 50vw));
+  }
+
+  .main_container {
+      min-width: 910px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }

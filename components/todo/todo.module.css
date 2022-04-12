@@ -1,8 +1,7 @@
 .container {
     margin-top: 40px;
-    width: 1024px;
+    width: 100%;
     box-sizing: border-box;
-    /* background-color: ghostwhite; */
     min-height: 344px;
     border: 2px solid #eeeeee;
     border-radius: 4px;

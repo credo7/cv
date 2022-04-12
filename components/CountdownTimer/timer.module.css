@@ -1,6 +1,6 @@
 .container {
     margin-top: 40px;
-    width: 1024px;
+    width: 100%;
     box-sizing: border-box;
     min-height: 300px;
     border: 2px solid #eeeeee;
@@ -68,7 +68,7 @@
     font-family: 'Oswald';
     font-size: 30px;
 
-    color: black;
+    color: rgb(59, 69, 78);
 }
 
 .countdown_timer {
@@ -76,12 +76,13 @@
     top: -10px;
     width: 600px;
     height: 100px;
-    border: 2px solid black;
+    border: 2px solid rgb(59, 69, 78);
     border-radius: 4px;
 
     font-family: 'Oswald';
     font-size: 30px;
-    background-color: #85ffd2;
+    background-color: #1f253c0c;
+    backdrop-filter: blur(2px);
 
     display: flex;
     justify-content: center;
@@ -90,7 +91,7 @@
 
 .gradient {
     text-transform: uppercase; 
-    background-image: linear-gradient(to right, white, black);
+    background-image: linear-gradient(to right, rgb(211, 220, 228), rgb(92, 105, 117), rgb(59, 69, 78));
     -webkit-background-clip: text; 
     background-clip: text; 
     color: transparent;

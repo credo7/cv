@@ -1,0 +1,25 @@
+.container_aside {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    color: rgb(92, 105, 117);
+}
+
+.container_aside ul {
+    margin-top: 16px;
+}
+
+.container_aside li {
+    width: 276px;
+    height: 40px;
+    display: flex;
+    padding: 0 16px;
+    justify-content: start;
+    align-items: center;
+}
+
+.active {
+    border: solid 1px rgb(211, 220, 228);
+    background-color: white;
+}

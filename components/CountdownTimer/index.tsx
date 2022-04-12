@@ -33,7 +33,7 @@ const CountdownTimer = ({ countdownTimestampMs }: props) => {
   return (
     <div className={style.container}>
       <Bubles bubleNum={1000} />
-      <HolidayLights lightsNum={24} />
+      <HolidayLights lightsNum={16} />
       <h2>Until Happy New Year</h2>
       <div className={style.countdown_timer + " " + style.unselectable}>
         <span className={style.gradient}>{remainingTime.days}</span>
