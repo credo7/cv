@@ -13,8 +13,6 @@ const Home: NextPage = () => {
       <div className={styles.second_container}>
         <div className={styles.main_container}>
           <Main />
-          <Main />
-          <Main />
         </div>
 
         <div className={styles.sidebar_secondary}>
