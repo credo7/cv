@@ -56,16 +56,27 @@
 }
 
 .container_aside .skills div {
+    background-color: rgba(211, 220, 228, 0.222);
     color: rgb(59, 69, 78);
     display: inline-block;
     margin: 4px;
     padding: 4px 8px;
-    border: 1.5px solid rgb(92, 105, 117);
+    border: 1px solid rgba(211, 220, 228, 0.222);
+    /* rgb(92, 105, 117); */
     border-radius: 15px;
 }
 
 .skills_container h2 {
+    margin-top: 16px;
+    margin-bottom: 16px;
     text-align: center;
     color: rgb(59, 69, 78);
     font-weight: 400;
+}
+
+.download_button {
+    margin-top: 24px;
+    padding: 12px;
+    border-radius: 5px;
+    background-color: rgba(211, 220, 228, 1);
 }

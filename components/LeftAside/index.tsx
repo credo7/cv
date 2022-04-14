@@ -16,7 +16,7 @@ const skills = [
   "Prisma",
   "Git",
   "CMD",
-  "RESP API",
+  "REST API",
   "NodeJS",
   "NestJS",
   "Express",
@@ -50,6 +50,11 @@ const LeftAside = () => {
       <div className={style.skills_container}>
         <h2>Skills:</h2>
         <div className={style.skills}>{skillsLi}</div>
+      </div>
+      <div className={style.download_button}>
+        <a download href="cv.pdf">
+          Download CV
+        </a>
       </div>
     </div>
   );
